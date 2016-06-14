@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config id='征信报告名称' version="1.1">
+	<path id="查询时间" start="span:contains(查询请求时间)" parent="0" tag="" skip="0">
+		<data tag="" class="RiskCreditBase">
+			<item value='querydate' type='date' format="yyyy.MM.dd HH:mm:ss" find="查询请求时间:" replace=""/>
+		</data>
+	</path>
+	
+	<path id="个人信息" start="span:contains(被查询者姓名)" startIndex="0" end="" parent="4" next="0" skip="0" tag="tr:eq(1)">
+		<data tag="td" class="RiskCreditBase">
+			<item value='name' type='String' />
+			<item value='type' type='String' />
+			<item value='credentialsNo' type='String' />
+		</data>
+	</path>
+	
+	<path id="个人信息" start="span:contains(学位)" parent="tbody" tag="tr" skip="0">
+		<data tag="tr:eq(1) td" class="RiskCreditBase">
+			<item value='gender' type='String' />
+			<item value='birthday' type='date' format="yyyy.MM.dd" />
+			<item value='marriage' type='String' />
+			<item value='phoneNumber' type='String' />
+			<item value='companyNumber' type='String' />
+			<item value='houseNumber' type='String' />
+			<item value='education' type='String' />
+			<item value='degree' type='String' />
+		</data>
+		<data tag="tr:eq(3) td" class="RiskCreditBase">
+			<item value='address' type='String' />
+			<item value='houseAddress' type='String' />
+		</data>
+	</path>
+	
+	<path id="居住信息" start="span:contains(居住信息)" parent="tr" skip="1" tag="table tr:gt(0)">
+		<data tag="td" class="RiskCreditLive">
+			<item/>
+			<item value='liveAddress' type='String' />
+			<item value='liveStatus' type='String' />
+			<item value='modifyTime' type='date' format="yyyy.MM.dd" /> 
+		</data>
+	</path>
+	
+	<path id="职业信息" start="span:contains(职业信息)" parent="tr" skip="1" tag="table tr">
+		<data tag="td" title="编号" class="RiskCreditProfession">
+			<item/>
+			<item value='number' type='integer' />
+			<item value='company' type='String' />
+			<item value='companyAddress' type='String' />
+		</data>
+		<data tag="td" title="编号" class="RiskCreditProfession">
+			<item/>
+			<item value='profession' type='String' />
+			<item value='industry' type='String' />
+			<item value='position' type='String' />
+			<item value='jobName' type='String' />
+			<item value='joinYear' type='date' format="yyyy" />
+			<item value='modifyTime' type='date' format="yyyy.MM.dd" />
+		</data>
+	</path>
+	
+	<group id="贷款" start="strong:contains(贷记卡)" parent="table" headTag="strong" removeEmpty="true" class="RiskCreditLoanDetail">
+		<path id="五级分类" start="strong:contains(五级分类)" parent="tbody" tag="tr">
+			<data tag="td" title="五级分类">
+				<item value='fiveType' type='string'></item>
+				<item value='selfAmount' type='double'></item>
+				<item value='overRepayMentPeriod' type='integer'></item>
+				<item value='currentMonthRepayMent' type='double'></item>
+				<item value='repayMentDate' type='date' format="yyyy.MM.dd"></item>
+				<item value='currentMonthRealRepayMent' type='double'></item>
+				<item value='recentRepayMentDate' type='date' format="yyyy.MM.dd"></item>
+			</data>
+			<data tag="td" title="当前逾期期数">
+				<item value='currentOverDuePeriod' type='integer'></item>
+				<item value='currentOverDueAmount' type='double'></item>
+				<item value='overDue31To60Amount' type='double'></item>
+				<item value='overDue61To90Amount' type='double'></item>
+				<item value='overDue91To180Amount' type='double'></item>
+				<item value='overDueMaxAmount' type='double'></item>
+			</data>
+		</path>
+		<path id="还款记录" start="strong:contains(的还款记录)" parent="tr" skip="1">
+			<data tag="td" title="当前逾期期数">
+				<item value='repayMentAmount1' type='string'></item>
+				<item value='repayMentAmount2' type='string'></item>
+				<item value='repayMentAmount3' type='string'></item>
+				<item value='repayMentAmount4' type='string'></item>
+				<item value='repayMentAmount5' type='string'></item>
+				<item value='repayMentAmount6' type='string'></item>
+				<item value='repayMentAmount7' type='string'></item>
+				<item value='repayMentAmount8' type='string'></item>
+				<item value='repayMentAmount9' type='string'></item>
+				<item value='repayMentAmount10' type='string'></item>
+				<item value='repayMentAmount11' type='string'></item>
+				<item value='repayMentAmount12' type='string'></item>
+				<item value='repayMentAmount13' type='string'></item>
+				<item value='repayMentAmount14' type='string'></item>
+				<item value='repayMentAmount15' type='string'></item>
+				<item value='repayMentAmount16' type='string'></item>
+				<item value='repayMentAmount17' type='string'></item>
+				<item value='repayMentAmount18' type='string'></item>
+				<item value='repayMentAmount19' type='string'></item>
+				<item value='repayMentAmount20' type='string'></item>
+				<item value='repayMentAmount21' type='string'></item>
+				<item value='repayMentAmount22' type='string'></item>
+				<item value='repayMentAmount23' type='string'></item>
+				<item value='repayMentAmount24' type='string'></item>
+			</data>
+		</path>
+		<path id="逾期记录" start="strong:contains(的逾期记录)" parent="tbody" tag="tr:gt(0)">
+			<data tag="td" col="2" class="RiskHistoryOverDueRecord" bind="riskHistoryOverDueRecords">
+				<item value='overDueMonth' type='date' format="yyyy.MM"></item>
+				<item value='overDueHoldOnMonth' type='integer'></item>
+				<item value='overDueAmount' type='double'></item>
+			</data>
+		</path>
+	</group>
+	
+	
+	
+	
+	
+
+
+</config>
