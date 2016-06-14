@@ -1,4 +1,4 @@
-package com.puhui.riskbrain.dao;
+package mybaits.dao;
 
 import com.puhui.riskbrain.model.RiskBrainProduct;
 
@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 产品表
  * 
- * @author wuxinyou
+ * @author wanghan
  */
 
 public interface RiskBrainProductMapper {

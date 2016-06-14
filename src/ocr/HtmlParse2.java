@@ -42,7 +42,7 @@ import com.puhui.tools.supplement.util.ParseResultTypeEnum;
 import com.puhui.tools.supplement.util.ParseUtil;
 
 /**
- * @author chenchao
+ * @author wanghan
  */
 public class HtmlParse2 {
     /**
@@ -99,7 +99,7 @@ public class HtmlParse2 {
     /**
      * 解析征信报告
      * 
-     * @author chenchao
+     * @author wanghan
      * @return
      */
     public Map<String, Object> parse() {
@@ -143,7 +143,7 @@ public class HtmlParse2 {
     /**
      * 解析单独节点
      * 
-     * @author chenchao
+     * @author wanghan
      * @param e
      *            模板节点对象
      * @param html
@@ -194,7 +194,7 @@ public class HtmlParse2 {
     /**
      * 解析多个节点
      * 
-     * @author chenchao
+     * @author wanghan
      * @param e
      *            模板节点对象
      */
@@ -239,7 +239,7 @@ public class HtmlParse2 {
                 }
             }
             /**
-             * @author chenchao tag != null
+             * @author wanghan tag != null
              */
             if (tag != null) {
                 dataList = dataList.select(tag);
@@ -266,7 +266,7 @@ public class HtmlParse2 {
     /**
      * 初始化 贷款 贷记卡 基本信息
      * 
-     * @author chenchao
+     * @author wanghan
      * @param e
      *            group节点
      * @param html
@@ -439,7 +439,7 @@ public class HtmlParse2 {
     /**
      * 解析数据,讲处理好的HTML代码,进行解析,并且封装成对象.
      * 
-     * @author chenchao
+     * @author wanghan
      * @param e
      * @param data
      * @param obj
@@ -523,7 +523,7 @@ public class HtmlParse2 {
     /**
      * 解析的数据是多条时,解析数据方法
      * 
-     * @author chenchao
+     * @author wanghan
      * @param rowData
      *            解析的数据源
      * @param startIndex
@@ -591,7 +591,7 @@ public class HtmlParse2 {
     /**
      * 单条数据拼装
      * 
-     * @author chenchao
+     * @author wanghan
      * @param startIndex
      * @param endIndex
      * @param className
@@ -632,7 +632,7 @@ public class HtmlParse2 {
     /**
      * 获取指定包含指定选择器(tag) 内容集合,当tag为空时,不做任何选择筛选
      * 
-     * @author chenchao
+     * @author wanghan
      * @param data
      *            要查找的数据节点
      * @param tag
@@ -677,7 +677,7 @@ public class HtmlParse2 {
     /**
      * 将多条数据 按照表头拆分成小组,每一组数据对应的是一条贷款数据
      * 
-     * @author chenchao
+     * @author wanghan
      * @param dataList
      * @param e
      * @return
@@ -720,7 +720,7 @@ public class HtmlParse2 {
     /**
      * 判断当前内容是否为下一个节点
      * 
-     * @author chenchao
+     * @author wanghan
      * @param data
      * @param titleIndex
      *            开始索引
@@ -741,7 +741,7 @@ public class HtmlParse2 {
     /**
      * 获取指定的父节点
      * 
-     * @author chenchao
+     * @author wanghan
      * @param el
      *            节点对象
      * @param parent
@@ -776,7 +776,7 @@ public class HtmlParse2 {
     /**
      * 获取指定的父节点对象
      * 
-     * @author chenchao
+     * @author wagnhan
      * @param el
      * @param skip
      *            参数可以是节点名或数字,数字代表向上多少级,节点名则检查第一个符合节点名的父节点.
@@ -806,7 +806,7 @@ public class HtmlParse2 {
     /**
      * 剔除对应的内容
      * 
-     * @author chenchao
+     * @author wanghan
      * @param str
      * @return
      */
@@ -852,7 +852,7 @@ public class HtmlParse2 {
     /**
      * 创建对象
      * 
-     * @author chenchao
+     * @author wanghan
      * @param className
      * @param isCreate
      *            当为true时,创建新对象,当为false时,先查询记录是否存在,不存在再创建
@@ -882,7 +882,7 @@ public class HtmlParse2 {
     /**
      * 填充数据
      * 
-     * @author chenchao
+     * @author wanghan
      * @param item
      *            填充配置节点
      * @param data
@@ -927,7 +927,7 @@ public class HtmlParse2 {
     /**
      * 转换数据并填充
      * 
-     * @author chenchao
+     * @author wanghan
      * @param pojo
      *            填充的对象
      * @param data
@@ -960,7 +960,7 @@ public class HtmlParse2 {
     /**
      * 转换数据并填充
      * 
-     * @author chenchao
+     * @author wanghna
      * @param pojo
      *            填充的对象
      * @param data
@@ -1008,92 +1008,5 @@ public class HtmlParse2 {
         return "GBK";
     }
 
-    // public Boolean fillStr(Object pojo, List list) {
-    // if (list.size() == 24) {
-    // if (pojo.getClass().equals(RiskCreditLoanDetail.class)) {
-    // RiskCreditLoanDetail riskCreditLoanDetail = (RiskCreditLoanDetail) pojo;
-    // riskCreditLoanDetail.setRepayMentAmount1(list.get(0).toString());
-    // riskCreditLoanDetail.setRepayMentAmount2(list.get(1).toString());
-    // riskCreditLoanDetail.setRepayMentAmount3(list.get(2).toString());
-    // riskCreditLoanDetail.setRepayMentAmount4(list.get(3).toString());
-    // riskCreditLoanDetail.setRepayMentAmount5(list.get(4).toString());
-    // riskCreditLoanDetail.setRepayMentAmount6(list.get(5).toString());
-    // riskCreditLoanDetail.setRepayMentAmount7(list.get(6).toString());
-    // riskCreditLoanDetail.setRepayMentAmount8(list.get(7).toString());
-    // riskCreditLoanDetail.setRepayMentAmount9(list.get(8).toString());
-    // riskCreditLoanDetail.setRepayMentAmount10(list.get(9).toString());
-    // riskCreditLoanDetail.setRepayMentAmount11(list.get(10).toString());
-    // riskCreditLoanDetail.setRepayMentAmount12(list.get(11).toString());
-    // riskCreditLoanDetail.setRepayMentAmount13(list.get(12).toString());
-    // riskCreditLoanDetail.setRepayMentAmount14(list.get(13).toString());
-    // riskCreditLoanDetail.setRepayMentAmount15(list.get(14).toString());
-    // riskCreditLoanDetail.setRepayMentAmount16(list.get(15).toString());
-    // riskCreditLoanDetail.setRepayMentAmount17(list.get(16).toString());
-    // riskCreditLoanDetail.setRepayMentAmount18(list.get(17).toString());
-    // riskCreditLoanDetail.setRepayMentAmount19(list.get(18).toString());
-    // riskCreditLoanDetail.setRepayMentAmount20(list.get(19).toString());
-    // riskCreditLoanDetail.setRepayMentAmount21(list.get(20).toString());
-    // riskCreditLoanDetail.setRepayMentAmount22(list.get(21).toString());
-    // riskCreditLoanDetail.setRepayMentAmount23(list.get(22).toString());
-    // riskCreditLoanDetail.setRepayMentAmount24(list.get(23).toString());
-    // resultMap.put("RiskCreditLoanDetail", riskCreditLoanDetail);
-    // } else if (pojo.getClass().equals(RiskLoanCard.class)) {
-    // RiskLoanCard riskLoanCard = (RiskLoanCard) pojo;
-    // riskLoanCard.setRepayMentAmount1(list.get(0).toString());
-    // riskLoanCard.setRepayMentAmount2(list.get(1).toString());
-    // riskLoanCard.setRepayMentAmount3(list.get(2).toString());
-    // riskLoanCard.setRepayMentAmount4(list.get(3).toString());
-    // riskLoanCard.setRepayMentAmount5(list.get(4).toString());
-    // riskLoanCard.setRepayMentAmount6(list.get(5).toString());
-    // riskLoanCard.setRepayMentAmount7(list.get(6).toString());
-    // riskLoanCard.setRepayMentAmount8(list.get(7).toString());
-    // riskLoanCard.setRepayMentAmount9(list.get(8).toString());
-    // riskLoanCard.setRepayMentAmount10(list.get(9).toString());
-    // riskLoanCard.setRepayMentAmount11(list.get(10).toString());
-    // riskLoanCard.setRepayMentAmount12(list.get(11).toString());
-    // riskLoanCard.setRepayMentAmount13(list.get(12).toString());
-    // riskLoanCard.setRepayMentAmount14(list.get(13).toString());
-    // riskLoanCard.setRepayMentAmount15(list.get(14).toString());
-    // riskLoanCard.setRepayMentAmount16(list.get(15).toString());
-    // riskLoanCard.setRepayMentAmount17(list.get(16).toString());
-    // riskLoanCard.setRepayMentAmount18(list.get(17).toString());
-    // riskLoanCard.setRepayMentAmount19(list.get(18).toString());
-    // riskLoanCard.setRepayMentAmount20(list.get(19).toString());
-    // riskLoanCard.setRepayMentAmount21(list.get(20).toString());
-    // riskLoanCard.setRepayMentAmount22(list.get(21).toString());
-    // riskLoanCard.setRepayMentAmount23(list.get(22).toString());
-    // riskLoanCard.setRepayMentAmount24(list.get(23).toString());
-    // resultMap.put("RiskLoanCard", riskLoanCard);
-    // } else if (pojo.getClass().equals(RiskPrepLoanCard.class)) {
-    // RiskPrepLoanCard riskPrepLoanCard = (RiskPrepLoanCard) pojo;
-    // riskPrepLoanCard.setRepayMentAmount1(list.get(0).toString());
-    // riskPrepLoanCard.setRepayMentAmount2(list.get(1).toString());
-    // riskPrepLoanCard.setRepayMentAmount3(list.get(2).toString());
-    // riskPrepLoanCard.setRepayMentAmount4(list.get(3).toString());
-    // riskPrepLoanCard.setRepayMentAmount5(list.get(4).toString());
-    // riskPrepLoanCard.setRepayMentAmount6(list.get(5).toString());
-    // riskPrepLoanCard.setRepayMentAmount7(list.get(6).toString());
-    // riskPrepLoanCard.setRepayMentAmount8(list.get(7).toString());
-    // riskPrepLoanCard.setRepayMentAmount9(list.get(8).toString());
-    // riskPrepLoanCard.setRepayMentAmount10(list.get(9).toString());
-    // riskPrepLoanCard.setRepayMentAmount11(list.get(10).toString());
-    // riskPrepLoanCard.setRepayMentAmount12(list.get(11).toString());
-    // riskPrepLoanCard.setRepayMentAmount13(list.get(12).toString());
-    // riskPrepLoanCard.setRepayMentAmount14(list.get(13).toString());
-    // riskPrepLoanCard.setRepayMentAmount15(list.get(14).toString());
-    // riskPrepLoanCard.setRepayMentAmount16(list.get(15).toString());
-    // riskPrepLoanCard.setRepayMentAmount17(list.get(16).toString());
-    // riskPrepLoanCard.setRepayMentAmount18(list.get(17).toString());
-    // riskPrepLoanCard.setRepayMentAmount19(list.get(18).toString());
-    // riskPrepLoanCard.setRepayMentAmount20(list.get(19).toString());
-    // riskPrepLoanCard.setRepayMentAmount21(list.get(20).toString());
-    // riskPrepLoanCard.setRepayMentAmount22(list.get(21).toString());
-    // riskPrepLoanCard.setRepayMentAmount23(list.get(22).toString());
-    // riskPrepLoanCard.setRepayMentAmount24(list.get(23).toString());
-    // resultMap.put("RiskPrepLoanCard", riskPrepLoanCard);
-    // }
-    // }
-    // return true;
-    // }
 
 }

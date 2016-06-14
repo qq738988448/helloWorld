@@ -13,12 +13,12 @@ import com.puhui.tools.supplement.parse.impl.HtmlParse2;
 import com.puhui.tools.supplement.util.ParseTemplateType;
 
 /**
- * @author chenchao
+ * @author wanghan
  */
 public class HtmlTest {
 
     /**
-     * @author chenchao
+     * @author wanghan
      * @param args
      * @throws IOException
      */
@@ -39,20 +39,4 @@ public class HtmlTest {
         System.out.println(map.size());
     }
 
-    // 1.0
-    // @SuppressWarnings({ "rawtypes", "unused" })
-    // public static void main(String[] args) throws IOException {
-    // HtmlParse html = new HtmlParse();
-    // BufferedReader br = new BufferedReader(new
-    // InputStreamReader(html.getClass().getClassLoader()
-    // .getResourceAsStream(ParseTemplateType.MINSHENG_BANK.getFileName())));
-    // StringBuilder b = new StringBuilder();
-    // String str = null;
-    // while ((str = br.readLine()) != null) {
-    // b.append(str);
-    // }
-    // html.setParseXML(b.toString());
-    // Map map = html.parse("C:/Users/jhgjj/Desktop/79405.htm");
-    // System.out.println(map.size());
-    // }
 }

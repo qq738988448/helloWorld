@@ -1,11 +1,11 @@
-package com.puhui.riskbrain.model;
+package mybaits.entry;
 
 import java.util.Date;
 
 /**
  * 产品表
  * 
- * @author wuxinyou
+ * @author wanghan
  */
 public class RiskBrainProduct {
     /**
