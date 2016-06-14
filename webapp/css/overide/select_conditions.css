@@ -1,0 +1,69 @@
+.ui-multiselect {
+	z-index: 10000;
+}
+.filter_condition{
+	border:1px dashed #999;width:auto;display: inline-table;padding:2px;
+	cursor:pointer;font-size:12px;margin: 2px 5px 0 0;border:1px solid #999;
+}
+.condition_{
+	width:auto;height:auto;float:left;margin-top: 10px;
+}
+.condition_ .select_conditions{
+	padding:5px 5px 0 54px;float:left;display:none;
+}
+.condition_ .select_price{
+	float:left;/*padding:5px 5px 0 5px;*/display:none;
+}
+.filter_condition{
+	border:1px dashed #999;width:auto;display: inline-table;padding:2px;
+	cursor:pointer;font-size:12px;margin: 2px 5px 2px 0;border:1px solid #999;	
+}
+.select_price button{
+	margin-top:-4px;
+}
+.select_price .price_filter{ 
+	margin:5px 0;
+}
+.filter_condition .glyphicon{
+	color:#999;
+}
+.filter_condition h1{
+	display: inline;font-size: xx-small;  line-height: inherit;	
+}
+.filter_condition:hover{
+		border:1px solid #1A78C0;color:#1A78C0;
+}
+.filter_condition:hover .glyphicon{
+ 	color:#c00;
+} 
+/*搜索条件*/
+.mySeach {
+	position:absolute;
+	display:none;
+	border:1px solid silver;
+	background:white;
+	box-shadow:0 3px 10px rgba(110, 110, 110, 1)
+}
+.mySeach input{
+	height: auto;
+	display: block;
+	position: relative;
+	top: -1px;
+	margin: 0 5px;
+	float: left;	
+}
+.mySeach td{
+	height: 30px;
+    line-height: 30px;
+}
+.mySeach td label{
+	width:100%;
+	height: 30px;
+	font-size: 15px;
+}
+.mySeach td:hover{
+	background: #0169A4;
+}
+.mySeach td:hover label{	
+	color: #fff;
+}

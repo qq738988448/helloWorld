@@ -1,0 +1,171 @@
+/* CSS Document */
+body{
+  background:#fff;font-family:"微软雅黑";
+}
+
+.head{
+	background:url(../images/head_bj.png) repeat-x;margin-bottom:10px;
+}
+.bor .ui-button-text{
+    font-size:12px;color:#000000;background:#FBFBFB;font-family: 微软雅黑;
+}
+.bor .ui-button-text:hover, .ui-button .ui-button-text:focus, .ui-button .ui-button-text:active {
+	background:#EBEBEB;
+}
+.bor img{
+  margin:-5px 2px 0 0;
+}
+.color .ui-button-text,.color{
+ color:#cc0000;
+}
+.nav{
+ margin:0 auto;/*padding-left:45px;*/ width:100%;height: 42px;
+background: #30ABF1;
+border: none;
+}
+.nav-tabs>li>a{margin-right:0px;height:42px;border:1px solid transparent;line-height:1.428571429;border-radius:0;}
+.nav li a {
+padding: 10px 30px;
+}
+.top,.pagetop{
+   background:#FBFBFB;height:90px;
+}
+.top label,.pagetop tabel{
+   height:60px;line-height:70px; font-size:16px;
+}
+.logo{
+   margin:20px 20px  20px 30px;
+}
+.wrap{
+    padding:0 40px;margin:0 auto; width:1350px
+}
+.group .caption{
+   padding:45px 0 7px 0;border-bottom:1px solid #000;margin-bottom:20px;
+}
+.group .caption h3{
+   font-size:14px; font-weight:bold;border-bottom:1px solid #f00;width:auto;display:inline;padding:0 30px 7px 0;
+}
+
+.licolor{
+  color:#fff;
+}
+.liweight{
+  font-weight:bold;
+}`
+.altleft{
+  text-align:left;
+}
+.altright{
+text-align:right;font-weight:100;
+}
+.padd{
+ padding:0;
+}
+.form-control{
+	border: 1px solid #0169A4;
+}
+.row{
+  height:50px;
+}
+.rowme{
+ height:110px;margin-right: -15px;margin-left: -15px;margin-bottom:10px;
+}
+.brline{
+   line-height:15px !important; padding-left:30px;padding-right:10px;
+}
+.col-md-1{
+  padding-right:10px;
+}
+
+
+
+/*���ֲ�*/
+.layer_mask{
+   position:absolute;top:0;left:0;z-index:100;
+}
+.mima{
+    position: absolute;top:29px;right: 0;z-index: 1000;width: 400px;padding: 5px;margin: 2px 0 0;font-size: 14px;list-style: none;background-color: #fff;
+	border: 1px solid #ccc;border: 1px solid rgba(0,0,0,0.15);border-radius: 4px;-webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+	box-shadow: 0 6px 12px rgba(0,0,0,0.175);background-clip: padding-box;
+}
+.mima li{
+    margin:5px; text-align:right;width: 50%;
+}
+.mima li button{
+ margin-right:15px;
+}
+/**/
+.head_bg .col-md-1{
+   padding:0;
+}
+
+.rankLow{
+	color: #ff9c3a;
+	background: url(../../images/pwd_sprite.png) 7px -96px;
+	padding-left: 82px;
+	position: absolute;
+	top: -38px;
+	right: -97px;
+	
+}
+.rankMiddle{
+	color: #61d01c;
+	background: url(../../images/pwd_sprite.png) 9px -138px;
+	padding-left: 82px;
+	position: absolute;
+	top: -39px;
+	right: -117px;
+}
+.rankHigh{
+	color: #61d01c;
+	background: url(../../images/pwd_sprite.png) 0px -185px;
+	padding-left: 70px;
+	position: absolute;
+	top: -38px;
+	right: -97px;
+}
+.pwd_info{
+	position: relative;
+}
+.password_info{
+	vertical-align: top;
+	color: #808080;
+	font-size: smaller;
+	position: absolute;
+	top: -22px;
+	right: -175px;
+	left: 197px;
+}
+.password_txt{
+	padding: =8px;
+	background: transparent;
+}
+.pwd_tips{
+	width: 170;
+	height: 78px;
+	padding-top: 10px;
+	position: absolute;
+	top: -49px;
+	right:-171px;
+	background: url(../../images/pwd_sprite.png) no-repeat scroll 0 0 rgba(255, 255, 255, 1);
+	font-size: smaller; 
+	text-align:left;
+}
+.default{
+	background: url(../../images/pwd_sprite.png) no-repeat scroll 7 -218px transparent;
+	padding: 1px;
+	padding-left:21px;
+}
+.no{
+	background: url(../../images/pwd_sprite.png) no-repeat scroll 7 -283px transparent;
+	padding: 1px;
+	padding-left: 21px;
+}
+.yes{
+	background: url(../../images/pwd_sprite.png) no-repeat scroll 7 -249px transparent;
+	padding: 1px;
+	padding-left: 21px;
+}
+.red{
+	color: #f66;
+}

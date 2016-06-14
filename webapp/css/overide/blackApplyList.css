@@ -1,0 +1,151 @@
+/* CSS Document */
+.line-hei{
+	line-height:30px;
+}
+.btn-color{
+  background:#A6CADF !important;
+ 
+}
+.number{
+    display:none;
+}
+.percent{
+	width:97.6%; resize:none;height:100px !important;margin-top:6px;
+}
+.raise{
+	width:100%;text-align:right;
+}
+.addnews{
+	margin-right:120px;
+}
+.deletenews{
+    margin:0 20px;
+}
+.main{
+/*    margin:0 10px; */
+}
+.main .pbutton{
+    margin-bottom:10px;
+    padding:0 !important;
+}
+.main .pbutton .search-con{
+	display:inline;
+	height:30px;
+}
+/* .main table td a{
+   padding:0 10px;
+ } */
+.table{
+  white-space:nowrap;
+}
+.table td{
+   height:50px;line-height:30px !important; cursor:pointer;
+}
+.table th.wid{
+   min-width:145px;
+}
+.trcolor{ 
+  background:#DBDEE3;
+}
+.search{
+  margin:0 10px 10px 10px;
+  background:#E7EEF6;
+}
+.searchbtn{
+  margin-bottom:10px;
+}
+.seekshow,.retract{
+   display:none;
+}
+.condition{
+   background:#E7EEF6;display:none;padding-top:10px;
+}
+ul li{
+   list-style:none;
+}
+.search ul{
+ height:40px;margin:5px 0px;padding:0;
+}
+.search ul li{
+    float:left;line-height:30px;width:170px; text-align:right;padding-right:10px;
+}
+.search ul li input,.search ul li select{
+   width:170px;
+}
+.search ul li.liwid{
+   width:100px; text-align:center;height:30px; font-weight:bold;
+}
+.search ul li.liwid2{
+   width:100px; text-align:right;height:30px;padding-right:10px;
+}
+.search ul li.liwid3{
+   width:370px;height:30px;
+}
+.search ul li.liwid3 button{
+  width:105px;  
+}
+.search ul.ulboder{
+  padding-bottom:45px;
+}
+.success th{
+	background:#D6EEFC !important;
+}
+.li-line{
+   padding-left:100px;
+}
+/*日期*/
+.ui-widget-header .ui-icon{
+	background-image: url(images/bg.png) !important;
+}
+.ui-icon-circle-triangle-w ,.ui-icon-circle-triangle-e{
+	background-position:0;
+}
+.ui-icon, .ui-widget-content .ui-icon {
+	background-image: url(images/bg.png);
+}
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {	
+	left: 25%;top: 24%;	
+}
+/**/
+
+.seekshow{
+	margin-left: 496px;
+	margin-top: -29px;
+}
+.open,
+.retract{
+  width:45px;
+  height:28px; 
+  float:left;
+  padding:0 !important;
+  margin-right:10px;
+}
+.open i,
+.retract i{
+	margin-top:4px;
+	font-size:21px;
+}
+.open .ui-button-text,
+.retract .ui-button-text{
+	padding:0;
+	width:45px;
+  	height:28px;
+}
+.open:hover,
+.retract:hover{
+	background:#30ABF1;
+}
+/**/
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label a{
+	height:auto;	
+}
+
+/*后台控制下拉效果*/
+.fall:hover{
+   color: #2A6496;
+}
+.dropdown_li a{
+	color: #fff !important;
+	text-decoration: none;
+	background-color: #428bca;
+}

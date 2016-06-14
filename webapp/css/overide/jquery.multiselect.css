@@ -1,0 +1,77 @@
+label{
+font-weight:normal;
+}
+.ui-multiselect { padding:2px 0 2px 4px; text-align:left }
+.ui-multiselect span.ui-icon { float:right }
+.ui-multiselect-single .ui-multiselect-checkboxes input { position:absolute !important; top: auto !important; left:-9999px; }
+.ui-multiselect-single .ui-multiselect-checkboxes label { padding:5px !important }
+
+.ui-multiselect-header { margin-bottom:3px; padding:3px 0 3px 4px }
+.ui-multiselect-header ul { font-size:0.9em }
+.ui-multiselect-header ul li { float:left; padding:0 10px 0 0 }
+.ui-multiselect-header a { text-decoration:none }
+.ui-multiselect-header a:hover { text-decoration:underline }
+.ui-multiselect-header span.ui-icon { float:left }
+.ui-multiselect-header li.ui-multiselect-close { float:right; text-align:right; padding-right:0 }
+
+.ui-multiselect-menu { display:none; padding:3px; position:absolute; z-index:10000; text-align: left }
+.ui-multiselect-checkboxes { position:relative /* fixes bug in IE6/7 */; overflow-y:auto }
+.ui-multiselect-checkboxes label { cursor:pointer; display:block; border:1px solid transparent; padding:3px 1px }
+.ui-multiselect-checkboxes label input { position:relative; top:-2px }
+.ui-multiselect-checkboxes li { clear:both; font-size:12px; font-weight:normal; }
+.ui-multiselect-checkboxes li input[type="checkbox"]{
+margin-right:5px;
+margin-left:15px;
+display: inline-block;
+  height: 18px !important;
+}
+label.ui-corner-all span{ position:relative; top:-7px}
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label { text-align:left; font-weight:bold; padding:3px;background:#0AA7D6;color:#ffffff; }
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label input[type="checkbox"]{
+margin:0 5px;
+position: relative;
+  top: 5px;
+}
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label a{
+	display: block;
+	float: right;
+	width: 30px;
+	height: 100%;
+	text-align: center;
+}
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label a { font-size:15px;line-height:20px;display:block; padding:0 3px; margin:1px 0; text-decoration:none;color:#fff; }
+.toggle-hide{
+	display: block;
+}
+/* remove label borders in IE6 because IE6 does not support transparency */
+* html .ui-multiselect-checkboxes label { border:none }
+.multiselect_btn{
+	padding-left:15px;
+	font-family: 微软雅黑;
+	font-size: 14px;
+	background-color:#ffffff;
+	background-image:none;
+	position:relative;
+	border:1px solid #0A6EA7;
+	height:34px;
+}
+.ui-icon-triangle-1-s{
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+label.ui-corner-all{
+	background:#fff !important;
+	border:none !important;
+	  height: 27px;
+}
+label.ui-state-hover{
+	background:#ebebeb !important;
+	border:none !important;
+}
+.multiselect_btn:hover,.multiselect_btn:focus,.multiselect_btn:active{
+  outline:0;border:1px solid #30ABF1;
+}
+.toggle-down,.toggle-up{
+	height:auto !important;
+}
